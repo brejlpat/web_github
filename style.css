@@ -1,0 +1,586 @@
+body {
+  font-family: Bahnschrift Light, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: #333;
+}
+
+header {
+  /*background-color: lightyellow;*/
+  color: white;
+
+  text-align: right;
+}
+
+#form {
+    display: grid;
+    place-items: center;
+}
+
+form {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  background: white;
+  border-radius: 8px;
+}
+
+.form_space {
+    padding: 2px;
+}
+
+nav {
+    display: flex; /* Nastaví položky uvnitř nav vedle sebe */
+    justify-content: center; /* Zarovná odkazy na střed horizontálně */
+    gap: 50px; /* Mezera mezi odkazy */
+    background-color: #f0f0f0; /* Přidání pozadí pro přehlednost */
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none; /* Odstranění podtržení odkazu */
+    color: white; /* Barva textu odkazu */
+    font-weight: bold; /* Zvýraznění textu */
+    font-size: 22px;
+    padding: 10px 15px; /* Přidání prostoru kolem textu */
+    border-radius: 5px; /* Kulaté rohy */
+    transition: background-color 0.3s ease; /* Plynulý efekt při najetí myší */
+}
+
+nav a:hover {
+    background-color: pink; /* Barva při najetí myší */
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+input, textarea, button {
+  display: block;
+  margin-bottom: 1rem;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+textarea {
+  display: block;
+  width: 70%;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-family: Bahnschrift Light, sans-serif;
+  text-align: center;
+
+}
+
+input {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+button {
+  background-color: #e3e3e3;
+  color: black;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  height: 35px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: 1px solid black;
+}
+
+h1 {
+    background-color: #e3e3e3;
+    color: black;
+    font-size: 30px;
+    margin: 0px;
+    text-align: center;
+}
+
+h2 {
+    text-decoration-line: underline;
+    text-decoration-color: #e5285c;
+    text-decoration-style: solid;
+    text-underline-offset: 10px;
+    font-size: 30px;
+}
+
+p {
+    font-size: 30px;
+    margin: 3px;
+    text-align: center;
+}
+
+button:hover {
+  background-color: lightpink;
+  color: black;
+}
+
+label {
+    margin: 40px;
+
+}
+
+.navbar {
+    position: fixed; /* Fixuje lištu na místě */
+    top: 0;          /* Umístí ji na vrch stránky */
+    left: 0;         /* Zarovná k levé straně */
+    width: 100%;     /* Zajistí, že pokryje celou šířku stránky */
+    background-color: #e3e3e3; /* Nastavení barvy pozadí */
+    background-position: center;
+    background-size: cover;
+    color: black;    /* Barva textu */
+    z-index: 100;   /* Zajistí, že lišta bude nad ostatními prvky */
+    display: flex;   /* Flexbox pro umístění odkazů */
+    justify-content: center; /* Vycentrování odkazů */
+    padding: 10px 0; /* Prostor kolem textu */
+    border: 2px solid black; /* Šedý okraj */
+
+}
+
+.navbar ul {
+    list-style-type: none; /* Odstranění teček u seznamu */
+    display: flex;         /* Seřadí odkazy vedle sebe */
+    margin: 0;             /* Odstraní výchozí mezery */
+    padding: 60px;
+}
+
+.navbar li {
+    margin: 0 15px; /* Mezera mezi odkazy */
+}
+
+.navbar a {
+    text-decoration: none; /* Odstraní podtržení */
+    color: black;          /* Barva textu */
+    background-color: #e3e3e3;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    /*color: #00bcd4; /* Barva při najetí myší */
+    color: black; /* Barva při najetí myší */
+}
+
+.box_title {
+    width: auto; /* Šířka boxu */
+    padding: 50px; /* Vnitřní odsazení od okrajů */
+    margin: 10px auto; /* Zarovnání na střed a mezera kolem boxu */
+    background-color: #b7ccb0; /* Světlé pozadí */
+    border: 2px solid black; /* Šedý okraj */
+    border-radius: 0px; /* Zaoblené rohy */
+    text-align: center; /* Zarovnání textu na střed */
+    place-items: center;
+}
+
+.box_title header {
+    padding: 10px;
+    background-color: #b7ccb0;
+}
+
+.box_title h2 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.box_title p {
+    font-size: 22px;
+    text-align: center;
+}
+
+.box_title nav a {
+    color: black;
+    margin-top: 20px;
+    background-color: #b7ccb0;
+    border: 2px solid black;
+}
+
+.box_title nav a:hover {
+    background-color: #e26386; /* Barva při najetí myší */
+    color: black;
+}
+
+.box_title nav {
+    background-color: #b7ccb0;
+}
+
+#form input {
+  font-family: Bahnschrift Light, sans-serif;       /* font písma v inputovém poli */
+}
+
+#form textarea {
+    font-family: Bahnschrift Light, sans-serif;     /* font písma v textovém poli */
+}
+
+#kontakty header {
+    padding: 40px;
+}
+
+.box_text_body {
+    display: grid;
+    place-items: center;
+}
+
+.div_text_body {
+    width: 65%;
+    height: auto;
+    background-color: white;
+    display: grid;
+    place-items: center;
+    border: 2px solid grey; /* Šedý okraj */
+    border-radius: 5px; /* Zaoblené rohy */
+}
+
+.div_box {
+    width: 70%;
+    height: auto;
+    background-color: white;
+}
+
+.div_box p {
+    line-height: 1.5;
+}
+
+.box_text_body h2 {
+    text-align: center;
+    /*text-decoration: underline;*/
+}
+
+.box_text_body p {
+    font-size: 15px;
+    font-family: Arial;
+}
+
+main {
+    background-image: url(3.png);
+    background-position: center;
+    background-size: 100%;
+}
+
+.box_onas {
+    display: grid;
+    place-items: center;
+    /*background-color: lightyellow;*/
+}
+
+.div1_onas {
+    width: 65%;
+    height: auto;
+    background-color: white;
+    display: grid;
+    place-items: center;
+    border: 2px solid grey; /* Šedý okraj */
+    border-radius: 5px; /* Zaoblené rohy */
+}
+
+.div2_onas {
+    width: 60%;
+    height: auto;
+    background-color: white;
+}
+
+.box_onas h2 {
+    text-align: center;
+    /*text-decoration: underline;*/
+}
+
+.box_onas p {
+    font-size: 15px;
+    font-family: Arial;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.box_kontakty {
+    display: grid;
+    place-items: center;
+    background-color: #b7ccb0;
+    border: 2px solid black ; /* Šedý okraj */
+}
+
+.div1_kontakty {
+    width: 90%;
+    height: auto;
+    background-color: #b7ccb0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.left_kontakty, .right_kontakty {
+  flex: 1; /* Zajistí, že oba divy mají stejnou šířku, pokud není nastaveno jinak */
+  padding: 20px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.right_kontakty h1 {
+    text-decoration-line: underline;
+    text-decoration-color: #e5285c;
+    text-decoration-style: solid;
+    text-underline-offset: 10px;
+    background-color: #b7ccb0;
+}
+
+.left_kontakty h1 {
+    text-decoration-line: underline;
+    text-decoration-color: #e5285c;
+    text-decoration-style: solid;
+    text-underline-offset: 10px;
+    background-color: #b7ccb0;
+}
+
+.box_kontakty h2 {
+    text-align: center;
+    /*text-decoration: underline;*/
+}
+
+.box_kontakty p {
+    font-size: 20px;
+    font-family: Arial;
+    color: black;
+}
+
+.box_form {
+    display: grid;
+    place-items: center;
+    /*background-color: lightyellow;*/
+}
+
+.div1_form {
+    width: 65%;
+    height: auto;
+    background-color: white;
+    display: grid;
+    place-items: center;
+    border: 2px solid grey; /* Šedý okraj */
+    border-radius: 5px; /* Zaoblené rohy */
+}
+
+.div2_form {
+    width: 45%;
+    height: auto;
+    background-color: white;
+    place-items: center;
+}
+
+.box_form h2 {
+    text-align: center;
+    /*text-decoration: underline;*/
+}
+
+.box_form p {
+    font-size: 15px;
+    font-family: Arial;
+}
+
+.navbar_space {
+    padding: 40px;
+}
+
+.portret {
+  width: 100px; /* šířka divu */
+  height: 200px; /* výška divu */
+  background-image: url('stickman.png'); /* cesta k obrázku */
+  background-size: cover; /* zajištění, že obrázek pokryje celý element */
+  background-position: center; /* zarovnání obrázku na střed */
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 5px 0;
+    width: 100%;
+  }
+
+  .navbar a {
+    font-size: 12px;
+  }
+
+  .navbar ul {
+    padding: 20px;
+  }
+
+  .navbar li {
+    margin: 0 5px; /* Mezera mezi odkazy */
+  }
+
+  nav {
+    gap: 1px;
+  }
+
+  nav a {
+    font-size: 13px;
+  }
+
+  .div1_kontakty {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+  }
+
+  main {
+    background-image: url(flowers.png);
+    background-position: center;
+    background-size: 100%;
+  }
+
+  .box_title h2 {
+    font-size: 21px;
+    text-decoration-line: underline;
+    text-decoration-color: #e5285c;
+    text-decoration-style: solid;
+    text-underline-offset: 5px;
+    width: 100%;
+  }
+
+  .box_title p {
+    font-size: 13px;
+  }
+
+  .box_title {
+    padding: 10px;
+    border: 1px solid black;
+  }
+
+  .box_title nav a {
+    margin-top: 0px;
+    border: 1px solid black;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .div_text_body {
+    width: 80%
+  }
+
+  .div_box {
+    width: 90%;
+    height: auto;
+    background-color: white;
+    }
+
+
+  #domu {
+    padding: 25px;
+    background-color: #b7ccb0
+  }
+
+  .domu2 {
+    padding: 25px;
+  }
+
+  .navbar_space {
+    padding: 30px;
+  }
+
+  .div1_onas {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    border: 1px solid grey;
+  }
+
+  .div2_onas {
+    width: 90%;
+    height: auto;
+    background-color: white;
+  }
+
+  .left_kontakty p {
+    font-size: 15px;
+  }
+
+  .left_kontakty h1 {
+    font-size: 20px;
+  }
+
+  .right_kontakty h1 {
+    font-size: 20px;
+  }
+
+  .right_kontakty iframe {
+    width: 100%;
+    height: 90%;
+  }
+
+  .left_kontakty, .right_kontakty {
+    padding: 10px;
+    text-align: center;
+    line-height: 22px;
+    place-items: center;
+  }
+
+  .div1_form {
+    width: 80%
+  }
+
+  .div2_form {
+    width: 90%;
+    height: auto;
+    background-color: white;
+    place-items: center;
+  }
+
+  input {
+    width: 90%;
+    height: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+  }
+
+  textarea {
+    width: 90%;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+  }
+
+  label {
+    font-size: 15px;
+  }
+
+  form {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background: white;
+    border-radius: 8px;
+  }
+
+  .form_space p {
+    padding: 0px;
+  }
+}
+

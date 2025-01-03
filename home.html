@@ -1,0 +1,165 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="box_title">
+  <header id="domu" style="padding: 30px"></header>
+  <h2>Ambulance dětské klinické psychologie</h2>
+  <p>Úvodní popis - např. psychologická ambulance apod...</p>
+
+  <nav>
+    <a href="#form">Objednejte se</a>
+  </nav>
+  <header class="domu2" style="background-color: #b7ccb0"></header>
+</div>
+
+<header class="navbar_space" id="sluzby"></header>
+
+<div class="box_text_body">
+  <div class="div_text_body">
+    <div class="div_box">
+      <h2 class="fancy_underline">Služby</h2>
+      <p style="text-align: justify">Ford Mustang je sportovní automobil vyráběný firmou Ford Motor Company. Zpočátku byl založen na modelu Ford Falcon. Výroba vozu začala 9. března 1964 v Dearbornu, Michigan a veřejnosti byl představen 17. dubna 1964 v New Yorku. Byl to nejúspěšnější Ford od Modelu A. Název navrhl John Najjar podle letounu North American P-51 Mustang. V letech 1967–1969 probíhala výroba vrcholné verze Shelby Mustang GT 500.
+        <br>
+
+  Ohromný úspěch Mustangu vedl ke zrodu nové třídy vozidel – pony car, kompaktních výkonných kupé s dlouhou přední kapotou a krátkou zádí. Tak se zrodily další vozy, jako např. Chevrolet Camaro, AMC Javelin nebo Plymouth Barracuda.[1]
+  Mustang inspiroval i některá kupé, jako Toyota Celica a Ford Capri. <br>
+
+  V roce 1971 se objevila nejsilnější verze – Mustang BOSS. Sedmilitrový motor V8 dosahoval výkonu 279,5 kW. <br>
+
+  V roce 1974 se představila druhá generace. Ta byla ve všech rozměrech menší. Poháněl ji motor V6 o objemu 2,8 litru z typu Capri.
+
+  V roce 1979 se představila třetí generace zvaná Fox Body, dle podvozkové platformy FOX. Tato generace byla nejdéle vyráběnou a to dlouhých 15 let až do roku 1994 v několika faceliftech.
+        <br>
+
+  V roce 1995 přišla na svět čtvrtá generace SN-95, ta měla celkem 3 facelifty. První proběhl už v roce 1996, kde se změnila zadní světla z horizontálních na vertikální 3 segmenty a změnila se konfigurace GT motorů ze starého 5,0 Windsoru na 4,6 Modular. Elektronika dostala OBD2 diagnostický konektor. Druhý větší facelift proběhl v roce 1998 kde se změnil design ve jménu New Edge, Mustang dostal hranatější tvary.
+        <br>
+
+  V roce 2005 se začal vyrábět pátá generace vozu s označením S197. Zde proběhly také celkem 3 výraznější facelifty a změny motorů. První řada 05-09 tzv. Retro. Pak verze MY2010-12, kde došlo od roku 2011 ke změně motorové palety a od roku 2013 jen lehký exteriérový a interiérový facelift.
+
+  V roce 2015, tedy padesát let po první verzi se představila zatím poslední šestá generace, která se začala prodávat jako globální model, tedy celosvětově.</p>
+      <p style="padding: 5px"></p>
+    </div>
+  </div>
+</div>
+
+<header class="navbar_space" id="onas"></header>
+
+<div class="box_onas">
+  <div class="div1_onas">
+    <div class="div2_onas">
+      <h2>O mně</h2>
+      <p>
+          O mně <br>
+
+          Ahoj! Jsem Alex Novák, designér a vývojář s vášní pro technologie a kreativní řešení. Vždy mě fascinovalo, jak mohou inovace změnit způsob, jakým komunikujeme, pracujeme a žijeme. Moje cesta začala ve světě grafického designu, ale postupně jsem se přesunul k webovému vývoji, kde jsem spojil svůj smysl pro estetiku s technickými dovednostmi.
+        <br>
+
+          Když nejsem ponořený do kódu, najdete mě pravděpodobně na cestách, s fotoaparátem v ruce, nebo v kavárně se šálkem kávy a knihou. Můj přístup k práci je jednoduchý: hledám krásu ve všem, co dělám, a věřím, že i ty nejmenší detaily mohou mít velký dopad.
+        <br>
+
+          Rád se učím nové věci a neustále zkouším nové nástroje a technologie, abych mohl nabídnout to nejlepší. Pokud máte zájem o spolupráci nebo chcete jen tak popovídat o nových trendech v designu a vývoji, neváhejte mě kontaktovat!
+      </p>
+      <p style="padding: 5px"></p>
+      <div class="portret"></div>
+      <p style="padding: 5px"></p>
+    </div>
+  </div>
+</div>
+
+<header class="navbar_space" id="form"></header>
+
+<div class="box_form">
+  <div class="div1_form">
+    <h2>Objednejte se</h2>
+    <div class="div2_form">
+      <form id="contactForm" method="POST" action="/form">
+        <label for="name">Jméno:</label>
+        <p class="form_space"></p>
+        <input type="text" id="name" name="name" required placeholder="Zadejte své jméno">
+
+        <label for="email">Email:</label>
+        <p class="form_space"></p>
+        <input type="email" id="email" name="email" required placeholder="Zadejte svůj email">
+
+        <label for="phone">Telefon:</label>
+        <p class="form_space"></p>
+        <input type="tel" id="phone" name="phone" required placeholder="Zadejte své telefoní číslo">
+
+        <label for="message">Zpráva:</label>
+        <p class="form_space"></p>
+        <textarea id="message" name="message" required placeholder="Napište svou zprávu"></textarea>
+        <p class="form_space"></p>
+        <button type="submit">Odeslat</button>
+      </form>
+    </div>
+
+    <script>
+      document.querySelector("#contactForm").addEventListener("submit", function (e) {
+        // Vyhledání polí ve formuláři
+        const name = document.querySelector("#name");
+        const email = document.querySelector("#email");
+        const message = document.querySelector("#message");
+
+        // Inicializace chybové zprávy
+        let errors = [];
+
+        // Validace jména
+        if (name.value.trim().length < 2) {
+          errors.push("Jméno musí mít alespoň 2 znaky.");
+        }
+
+        // Validace emailu (základní kontrola obsahu '@')
+        if (!email.value.includes("@")) {
+          errors.push("Email musí být platný.");
+        }
+
+        // Validace zprávy
+        if (message.value.trim().length < 10) {
+          errors.push("Zpráva musí obsahovat alespoň 10 znaků.");
+        }
+
+        // Pokud existují chyby, zobrazit alert a zastavit odeslání
+        if (errors.length > 0) {
+          alert(errors.join("\n"));
+          e.preventDefault(); // Zastaví odeslání formuláře
+        }
+      });
+    </script>
+  </div>
+</div>
+
+<header class="navbar_space" id="kontakty"></header>
+
+<div class="box_kontakty">
+  <div class="div1_kontakty">
+    <div class="left_kontakty">
+      <p style="padding: 8px"></p>
+      <h1 style="line-height: 1.4">Konktaktní údaje</h1>
+      <p style="padding: 8px"></p>
+      <p>Telefon: +420 123 456 789 <br>
+      E-mail: email@zavinac.cz <br>
+      Adresa: Alšovo nám. 74/11 Písek, 39701</p>
+      <p style="padding: 8px"></p>
+      <h1 style="line-height: 1.4">Ordinační a provozní doba</h1>
+      <p style="padding: 8px"></p>
+      <p>
+        Pondělí: 8:00 - 9:00 <br>
+        Úterý: 8:00 - 18:00 <br>
+        Středa: 0:00 - 23:59 <br>
+        Čtvrtek: 8:00 - 15:00 <br>
+        Pátek: DOVOLENÁ
+      </p>
+    </div>
+
+    <div class="right_kontakty">
+      <p style="padding: 8px"></p>
+      <h1>Kde mě najdete</h1>
+      <p style="padding: 8px"></p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2601.3641823846733!2d14.146996576367668!3d49.307386471396555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b4ff3f7117889%3A0x35566d88c1d8fdcd!2zQWzFoW92byBuw6FtLiA3NC8xMSwgMzk3IDAxIFDDrXNlayAxLVZuaXTFmW7DrSBNxJtzdG8!5e0!3m2!1scs!2scz!4v1735583610703!5m2!1scs!2scz" width="400" height="300" style="border: 2px solid black" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+  <header style="padding: 30px"></header>
+  <p style="font-size: 10px">© Eva Kravarová, 2025</p>
+</div>
+
+{% endblock %}

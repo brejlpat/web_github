@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Webpage testing</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#domu">Domů</a>
+            <a href="#sluzby">Služby</a>
+            <a href="#onas">O mně</a>
+            <a href="#form">Napište mi</a>
+            <a href="#kontakty">Kontakt</a>
+        </nav>
+
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

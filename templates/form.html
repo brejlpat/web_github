@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block content %}
+<form id="contactForm" method="POST" action="/form">
+  <label for="name">Jméno:</label>
+  <input type="text" id="name" name="name" required placeholder="Zadejte své jméno">
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required placeholder="Zadejte svůj email">
+
+  <label for="phone">Phone:</label>
+  <input type="tel" id="phone" name="phone" required placeholder="Zadejte své telefoní číslo">
+
+  <label for="message">Zpráva:</label>
+  <textarea id="message" name="message" required placeholder="Napište svou zprávu"></textarea>
+
+  <button type="submit">Odeslat</button>
+</form>
+<script>
+  document.querySelector("#contactForm").addEventListener("submit", function (e) {
+    // Vyhledání polí ve formuláři
+    const name = document.querySelector("#name");
+    const email = document.querySelector("#email");
+    const message = document.querySelector("#message");
+
+    // Inicializace chybové zprávy
+    let errors = [];
+
+    // Validace jména
+    if (name.value.trim().length < 2) {
+      errors.push("Jméno musí mít alespoň 2 znaky.");
+    }
+
+    // Validace emailu (základní kontrola obsahu '@')
+    if (!email.value.includes("@")) {
+      errors.push("Email musí být platný.");
+    }
+
+    // Validace zprávy
+    if (message.value.trim().length < 5) {
+      errors.push("Zpráva musí obsahovat alespoň 10 znaků.");
+    }
+
+    // Pokud existují chyby, zobrazit alert a zastavit odeslání
+    if (errors.length > 0) {
+      alert(errors.join("\n"));
+      e.preventDefault(); // Zastaví odeslání formuláře
+    }
+  });
+</script>
+{% endblock %}

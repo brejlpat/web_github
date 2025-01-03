@@ -43,7 +43,7 @@ def form():
                 # Sestavení e-mailu
                 msg = MIMEMultipart()
                 msg["From"] = EMAIL_ADDRESS
-                msg["To"] = "patrikbrejla@seznam.cz"  # Nahraď adresou příjemce
+                msg["To"] = "webtest.mail@seznam.cz"  # Nahraď adresou příjemce
                 msg["Subject"] = subject
                 msg.attach(MIMEText(body, "plain"))
 

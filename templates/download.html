@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block content %}
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="/">Domů</a>
+        </nav>
+
+    </header>
+    <main>
+      <header class="navbar_space"></header>
+      <div class="box_download">
+        <div class="div1_download">
+          <div class="div2_download">
+            <h2>📄 Formuláře ke stažení</h2>
+                <p>Potřebné formuláře na jednom místě! Zde najdete všechny dokumenty, které můžete snadno stáhnout, vyplnit a doručit nám zpět. Vyberte si ten, který potřebujete, a stáhněte si ho jedním kliknutím.</p>
+                <p style="padding: 5px"></p>
+                <p style="font-size: 17px; text-decoration-line: underline; text-underline-offset: 5px; text-decoration-color: #e5285c">Dostupné formuláře:</p>
+                <ul>
+                    <li>
+                        <strong>Žádost o registraci</strong><br>
+                        Tento formulář slouží k registraci nových uživatelů. Stáhněte si jej, vyplňte a zašlete nám zpět e-mailem nebo poštou.<br>
+                        📥 <a href="/static/Žádost o registraci.pdf" download="Žádost o registraci.pdf">Stáhnout formulář (PDF)</a>
+                        <p style="padding: 5px"></p>
+                    </li>
+                    <li>
+                        <strong>Žádost o změnu údajů</strong><br>
+                        Pokud potřebujete aktualizovat své osobní údaje, stáhněte si tento formulář. Vyplněný dokument můžete doručit osobně nebo prostřednictvím e-mailu.<br>
+                        📥 <a href="/static/Žádost o změnu údajů.pdf" download="Žádost o změnu údajů.pdf">Stáhnout formulář (PDF)</a>
+                        <p style="padding: 5px"></p>
+                    </li>
+                    <li>
+                        <strong>Reklamační formulář</strong><br>
+                        Pro podání reklamace využijte tento formulář. Vyplněný dokument zašlete na naši kontaktní adresu.<br>
+                        📥 <a href="/static/Reklamační formulář.pdf" download="Reklamační formulář.pdf">Stáhnout formulář (PDF)</a>
+                        <p style="padding: 5px"></p>
+                    </li>
+                </ul>
+
+                <div class="note">
+                    <strong>Jak formuláře vyplnit?</strong><br>
+                    Formuláře jsou k dispozici ve formátu PDF a lze je vyplnit ručně nebo elektronicky. Pokud máte jakékoliv dotazy k vyplnění, neváhejte nás kontaktovat na čísle <a href="tel:+420123456789">+420 123 456 789</a> nebo e-mailem na <a href="mailto:info@vasweb.cz">info@vasweb.cz</a>.
+                </div>
+                <p style="padding: 5px"></p>
+                <p class="note">
+                    <strong>Poznámka:</strong><br>
+                    Ujistěte se, že vyplněné formuláře jsou podepsané a obsahují všechny potřebné informace. Nepodepsané nebo neúplné formuláře nemohou být akceptovány.
+                </p>
+                <p style="padding: 5px"></p>
+          </div>
+        </div>
+      </div>
+      <header style="padding: 50px"></header>
+    </main>
+</body>
+
+
+{% endblock %}

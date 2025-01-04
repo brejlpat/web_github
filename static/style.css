@@ -50,7 +50,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: pink; /* Barva při najetí myší */
+    background-color: #f1678d; /* Barva při najetí myší */
 }
 
 nav li {
@@ -100,11 +100,11 @@ input {
 button {
   background-color: #e3e3e3;
   color: black;
-  width: 50%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   border: none;
-  height: 35px;
+  height: 100%;
   cursor: pointer;
   transition: background-color 0.3s ease;
   border: 1px solid black;
@@ -124,6 +124,7 @@ h2 {
     text-decoration-style: solid;
     text-underline-offset: 10px;
     font-size: 30px;
+    text-align: center;
 }
 
 p {
@@ -147,7 +148,7 @@ label {
     top: 0;          /* Umístí ji na vrch stránky */
     left: 0;         /* Zarovná k levé straně */
     width: 100%;     /* Zajistí, že pokryje celou šířku stránky */
-    background-color: #e3e3e3; /* Nastavení barvy pozadí */
+    background-color: #b7ccb0; /* Nastavení barvy pozadí */
     background-position: center;
     background-size: cover;
     color: black;    /* Barva textu */
@@ -173,7 +174,7 @@ label {
 .navbar a {
     text-decoration: none; /* Odstraní podtržení */
     color: black;          /* Barva textu */
-    background-color: #e3e3e3;
+    background-color: #b7ccb0;
     font-weight: bold;
 }
 
@@ -204,7 +205,7 @@ label {
 }
 
 .box_title p {
-    font-size: 22px;
+    font-size: 25px;
     text-align: center;
 }
 
@@ -247,8 +248,8 @@ label {
     background-color: white;
     display: grid;
     place-items: center;
-    border: 2px solid grey; /* Šedý okraj */
-    border-radius: 5px; /* Zaoblené rohy */
+    border: 2px solid grey;
+    border-radius: 5px;
 }
 
 .div_box {
@@ -277,10 +278,34 @@ main {
     background-size: 100%;
 }
 
+.box_aktuality {
+    display: grid;
+    place-items: center;
+}
+
+.div1_aktuality {
+    width: 65%;
+    height: auto;
+    background-color: white;
+    display: grid;
+    place-items: center;
+    border: 2px solid grey; /* Šedý okraj */
+    border-radius: 5px;
+}
+
+.div2_aktuality {
+    width: 60%;
+    height: auto;
+    background-color: white;
+}
+
+.div2_aktuality p {
+    font-size: 20px;
+}
+
 .box_onas {
     display: grid;
     place-items: center;
-    /*background-color: lightyellow;*/
 }
 
 .div1_onas {
@@ -289,8 +314,8 @@ main {
     background-color: white;
     display: grid;
     place-items: center;
-    border: 2px solid grey; /* Šedý okraj */
-    border-radius: 5px; /* Zaoblené rohy */
+    border: 2px solid grey;
+    border-radius: 5px;
 }
 
 .div2_onas {
@@ -301,7 +326,6 @@ main {
 
 .box_onas h2 {
     text-align: center;
-    /*text-decoration: underline;*/
 }
 
 .box_onas p {
@@ -315,7 +339,7 @@ main {
     display: grid;
     place-items: center;
     background-color: #b7ccb0;
-    border: 2px solid black ; /* Šedý okraj */
+    border: 2px solid black;
 }
 
 .div1_kontakty {
@@ -361,39 +385,6 @@ main {
     color: black;
 }
 
-.box_form {
-    display: grid;
-    place-items: center;
-    /*background-color: lightyellow;*/
-}
-
-.div1_form {
-    width: 65%;
-    height: auto;
-    background-color: white;
-    display: grid;
-    place-items: center;
-    border: 2px solid grey; /* Šedý okraj */
-    border-radius: 5px; /* Zaoblené rohy */
-}
-
-.div2_form {
-    width: 45%;
-    height: auto;
-    background-color: white;
-    place-items: center;
-}
-
-.box_form h2 {
-    text-align: center;
-    /*text-decoration: underline;*/
-}
-
-.box_form p {
-    font-size: 15px;
-    font-family: Arial;
-}
-
 .navbar_space {
     padding: 40px;
 }
@@ -409,12 +400,121 @@ main {
   border: 2px solid black;
 }
 
+table {
+    width: auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+thead th {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+}
+
+tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+td, th {
+    text-align: center;
+}
+
+.box_objednani {
+    display: grid;
+    place-items: center;
+}
+
+.div1_objednani {
+    width: 65%;
+    height: auto;
+    background-color: white;
+    display: grid;
+    place-items: center;
+    border: 2px solid grey; /* Šedý okraj */
+    border-radius: 5px;
+}
+
+.div2_objednani {
+    width: 60%;
+    height: auto;
+    background-color: white;
+}
+
+.div2_objednani p {
+    font-size: 15px;
+}
+
+.box_download {
+    display: grid;
+    place-items: center;
+}
+
+.div1_download {
+    width: 65%;
+    height: auto;
+    background-color: white;
+    display: grid;
+    place-items: center;
+    border: 2px solid grey; /* Šedý okraj */
+    border-radius: 5px;
+}
+
+.div2_download {
+    width: 60%;
+    height: auto;
+    background-color: white;
+}
+
+.div2_download p {
+    font-size: 15px;
+}
+
+.button {
+    display: grid;
+    width: 50%;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button:hover {
+    background-color: lightpink; /* Tmavší modrá při najetí */
+    transform: scale(1.05); /* Mírné zvětšení při najetí */
+}
+
+.button:active {
+    background-color: red; /* Ještě tmavší modrá při kliknutí */
+    transform: scale(0.95); /* Mírné zmenšení při kliknutí */
+}
+
+
 /* Media Queries for Mobile Devices */
 @media (max-width: 768px) {
 
   .navbar {
     padding: 5px 0;
     width: 100%;
+    border: 1px solid black;
   }
 
   .navbar a {
@@ -445,7 +545,7 @@ main {
   }
 
   main {
-    background-image: url(flowers.png);
+    background-image: url(3.png);
     background-position: center;
     background-size: 100%;
   }
@@ -474,11 +574,12 @@ main {
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 17px;
   }
 
   .div_text_body {
-    width: 80%
+    width: 80%;
+    border: 1px solid grey;
   }
 
   .div_box {
@@ -491,10 +592,6 @@ main {
   #domu {
     padding: 25px;
     background-color: #b7ccb0
-  }
-
-  .domu2 {
-    padding: 25px;
   }
 
   .navbar_space {
@@ -515,16 +612,20 @@ main {
     background-color: white;
   }
 
+  .box_kontakty {
+    border: 1px solid black;
+  }
+
   .left_kontakty p {
     font-size: 15px;
   }
 
   .left_kontakty h1 {
-    font-size: 20px;
+    font-size: 17px;
   }
 
   .right_kontakty h1 {
-    font-size: 20px;
+    font-size: 17px;
   }
 
   .right_kontakty iframe {
@@ -539,48 +640,105 @@ main {
     place-items: center;
   }
 
-  .div1_form {
-    width: 80%
+  .div1_aktuality {
+    width: 80%;
+    height: auto;
+    background-color: white;
+    display: grid;
+    place-items: center;
+    border: 1px solid grey; /* Šedý okraj */
+    border-radius: 5px;
   }
 
-  .div2_form {
+  .div2_aktuality {
     width: 90%;
     height: auto;
     background-color: white;
-    place-items: center;
   }
 
-  input {
-    width: 90%;
-    height: 28px;
+  .div2_aktuality p {
+    font-size: 15px;
+  }
+
+  table {
+    width: auto;
+    border-collapse: collapse;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 15px;
-  }
+}
 
-  textarea {
-    width: 90%;
-    height: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 15px;
-  }
-
-  label {
-    font-size: 15px;
-  }
-
-  form {
+  thead th {
+    background-color: #f8f8f8;
     text-align: center;
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    background: white;
-    border-radius: 8px;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
   }
 
-  .form_space p {
-    padding: 0px;
+  tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+
+  td, th {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .div1_objednani {
+    width: 80%;
+    height: auto;
+    background-color: white;
+    display: grid;
+    place-items: center;
+    border: 1px solid grey; /* Šedý okraj */
+    border-radius: 5px;
+  }
+
+  .div2_objednani {
+    width: 90%;
+    height: auto;
+    background-color: white;
+  }
+
+  .div2_objednani p {
+    font-size: 15px;
+  }
+
+  .div2_objednani ol {
+    font-size: 15px;
+  }
+
+  .div1_download {
+    width: 80%;
+    height: auto;
+    background-color: white;
+    display: grid;
+    place-items: center;
+    border: 1px solid grey; /* Šedý okraj */
+    border-radius: 5px;
+  }
+
+  .div2_download {
+    width: 90%;
+    height: auto;
+    background-color: white;
+  }
+
+  .div2_download p {
+    font-size: 15px;
+  }
+
+  .div2_download ul {
+    font-size: 15px;
   }
 }
 

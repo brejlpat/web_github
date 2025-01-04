@@ -5,11 +5,42 @@
   <header id="domu" style="padding: 30px"></header>
   <h2>Ambulance dětské klinické psychologie</h2>
   <p>Úvodní popis - např. psychologická ambulance apod...</p>
+  <header style="background-color: #b7ccb0; padding: 25px"></header>
+</div>
 
-  <nav>
-    <a href="#form">Objednejte se</a>
-  </nav>
-  <header class="domu2" style="background-color: #b7ccb0"></header>
+<header style="padding: 20px"></header>
+
+<div class="box_aktuality">
+  <div class="div1_aktuality">
+    <div class="div2_aktuality">
+      <h2>Aktuality</h2>
+      <p>Vánoční otevírací doba <br>
+          Během svátků jsme tu pro vás: <br>
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Datum</th>
+            <th>Otevírací doba</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>23. 12.</td>
+            <td>9:00 - 15:00</td>
+          </tr>
+          <tr>
+            <td>24. 12.</td>
+            <td>Zavřeno</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        <br>Děkujeme za pochopení a přejeme vám klidné svátky!
+      </p>
+      <p><br></p>
+    </div>
+  </div>
 </div>
 
 <header class="navbar_space" id="sluzby"></header>
@@ -49,9 +80,7 @@
     <div class="div2_onas">
       <h2>O mně</h2>
       <p>
-          O mně <br>
-
-          Ahoj! Jsem Alex Novák, designér a vývojář s vášní pro technologie a kreativní řešení. Vždy mě fascinovalo, jak mohou inovace změnit způsob, jakým komunikujeme, pracujeme a žijeme. Moje cesta začala ve světě grafického designu, ale postupně jsem se přesunul k webovému vývoji, kde jsem spojil svůj smysl pro estetiku s technickými dovednostmi.
+        Ahoj! Jsem Alex Novák, designér a vývojář s vášní pro technologie a kreativní řešení. Vždy mě fascinovalo, jak mohou inovace změnit způsob, jakým komunikujeme, pracujeme a žijeme. Moje cesta začala ve světě grafického designu, ale postupně jsem se přesunul k webovému vývoji, kde jsem spojil svůj smysl pro estetiku s technickými dovednostmi.
         <br>
 
           Když nejsem ponořený do kódu, najdete mě pravděpodobně na cestách, s fotoaparátem v ruce, nebo v kavárně se šálkem kávy a knihou. Můj přístup k práci je jednoduchý: hledám krásu ve všem, co dělám, a věřím, že i ty nejmenší detaily mohou mít velký dopad.
@@ -66,65 +95,37 @@
   </div>
 </div>
 
-<header class="navbar_space" id="form"></header>
+<header class="navbar_space" id="objednani"></header>
 
-<div class="box_form">
-  <div class="div1_form">
-    <h2>Objednejte se</h2>
-    <div class="div2_form">
-      <form id="contactForm" method="POST" action="/form">
-        <label for="name">Jméno:</label>
-        <p class="form_space"></p>
-        <input type="text" id="name" name="name" required placeholder="Zadejte své jméno">
-
-        <label for="email">Email:</label>
-        <p class="form_space"></p>
-        <input type="email" id="email" name="email" required placeholder="Zadejte svůj email">
-
-        <label for="phone">Telefon:</label>
-        <p class="form_space"></p>
-        <input type="tel" id="phone" name="phone" required placeholder="Zadejte své telefoní číslo">
-
-        <label for="message">Zpráva:</label>
-        <p class="form_space"></p>
-        <textarea id="message" name="message" required placeholder="Napište svou zprávu"></textarea>
-        <p class="form_space"></p>
-        <button type="submit">Odeslat</button>
-      </form>
+<div class="box_objednani">
+  <div class="div1_objednani">
+    <div class="div2_objednani">
+      <h2>Objednání</h2>
+      <p>Objednat se k sezení je jednoduché a rychlé. Stačí postupovat podle následujících kroků:</p>
+    <ol>
+        <li>
+            <strong>Zavolejte nám na telefonní číslo</strong><br>
+            Kontaktujte nás na čísle <a href="tel:+420123456789">+420 123 456 789</a>. Naše telefonní linka je k dispozici
+            v pracovních dnech od <strong>9:00 do 17:00</strong>.
+        </li>
+        <li>
+            <strong>Domluvte si termín</strong><br>
+            Společně vybereme termín, který vám bude vyhovovat. Rádi se přizpůsobíme vašim možnostem a zajistíme vám co nejbližší dostupné datum.
+        </li>
+        <li>
+            <strong>Potvrzení objednávky</strong><br>
+            Po domluvě termínu vám zašleme potvrzení prostřednictvím SMS nebo e-mailu (dle vašeho výběru), kde budou všechny potřebné informace o plánovaném sezení.
+        </li>
+        <li>
+            <strong>Příprava na sezení</strong><br>
+            Pokud máte jakékoliv otázky nebo požadavky, nebojte se nás při telefonickém hovoru informovat. Rádi vám poskytneme další podrobnosti a poradíme, jak se na sezení připravit.
+        </li>
+    </ol>
+      <p style="padding: 5px"></p>
+      <p>Zde naleznete formuláře k vyplnění:</p>
+      <a href="/formulare" class="button"><button>Formuláře ke stažení</button></a>
+      <p style="padding: 5px"></p>
     </div>
-
-    <script>
-      document.querySelector("#contactForm").addEventListener("submit", function (e) {
-        // Vyhledání polí ve formuláři
-        const name = document.querySelector("#name");
-        const email = document.querySelector("#email");
-        const message = document.querySelector("#message");
-
-        // Inicializace chybové zprávy
-        let errors = [];
-
-        // Validace jména
-        if (name.value.trim().length < 2) {
-          errors.push("Jméno musí mít alespoň 2 znaky.");
-        }
-
-        // Validace emailu (základní kontrola obsahu '@')
-        if (!email.value.includes("@")) {
-          errors.push("Email musí být platný.");
-        }
-
-        // Validace zprávy
-        if (message.value.trim().length < 10) {
-          errors.push("Zpráva musí obsahovat alespoň 10 znaků.");
-        }
-
-        // Pokud existují chyby, zobrazit alert a zastavit odeslání
-        if (errors.length > 0) {
-          alert(errors.join("\n"));
-          e.preventDefault(); // Zastaví odeslání formuláře
-        }
-      });
-    </script>
   </div>
 </div>
 
@@ -155,7 +156,7 @@
       <p style="padding: 8px"></p>
       <h1>Kde mě najdete</h1>
       <p style="padding: 8px"></p>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2601.3641823846733!2d14.146996576367668!3d49.307386471396555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b4ff3f7117889%3A0x35566d88c1d8fdcd!2zQWzFoW92byBuw6FtLiA3NC8xMSwgMzk3IDAxIFDDrXNlayAxLVZuaXTFmW7DrSBNxJtzdG8!5e0!3m2!1scs!2scz!4v1735583610703!5m2!1scs!2scz" width="400" height="300" style="border: 2px solid black" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2601.3641823846733!2d14.146996576367668!3d49.307386471396555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b4ff3f7117889%3A0x35566d88c1d8fdcd!2zQWzFoW92byBuw6FtLiA3NC8xMSwgMzk3IDAxIFDDrXNlayAxLVZuaXTFmW7DrSBNxJtzdG8!5e0!3m2!1scs!2scz!4v1735583610703!5m2!1scs!2scz" width="400" height="300" style="border: 1px solid black" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
   <header style="padding: 30px"></header>

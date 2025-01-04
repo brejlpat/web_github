@@ -9,26 +9,17 @@ body {
 header {
   /*background-color: lightyellow;*/
   color: white;
-
   text-align: right;
 }
 
-#form {
-    display: grid;
-    place-items: center;
+a {
+    text-decoration: none; /* Zrušení podtržení */
+    color: #007BFF; /* Nastavení barvy odkazu */
 }
 
-form {
-  text-align: center;
-  margin: 0px;
-  padding: 0px;
-  width: 100%;
-  background: white;
-  border-radius: 8px;
-}
-
-.form_space {
-    padding: 2px;
+a:hover {
+    text-decoration: underline; /* Podtržení při najetí na odkaz (nebo jiný efekt) */
+    color: #0056b3; /* Změna barvy při najetí */
 }
 
 nav {
@@ -51,6 +42,7 @@ nav a {
 
 nav a:hover {
     background-color: #f1678d; /* Barva při najetí myší */
+    transform: scale(1.05); /* Mírné zvětšení při najetí */
 }
 
 nav li {
@@ -134,7 +126,7 @@ p {
 }
 
 button:hover {
-  background-color: lightpink;
+  background-color: #f1678d;
   color: black;
 }
 
@@ -406,18 +398,17 @@ table {
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+    border: 1px solid grey;
 }
 
 thead th {
     background-color: #f8f8f8;
     text-align: center;
     padding: 10px;
-    border-bottom: 2px solid #ddd;
 }
 
 tbody td {
     padding: 10px;
-    border-bottom: 1px solid #ddd;
 }
 
 tr:nth-child(even) {
@@ -498,12 +489,13 @@ td, th {
 }
 
 .button:hover {
-    background-color: lightpink; /* Tmavší modrá při najetí */
+    background-color: #f1678d; /* Tmavší modrá při najetí */
     transform: scale(1.05); /* Mírné zvětšení při najetí */
+    text-decoration: none;
+
 }
 
 .button:active {
-    background-color: red; /* Ještě tmavší modrá při kliknutí */
     transform: scale(0.95); /* Mírné zmenšení při kliknutí */
 }
 
@@ -660,24 +652,14 @@ td, th {
     font-size: 15px;
   }
 
-  table {
-    width: auto;
-    border-collapse: collapse;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
   thead th {
     background-color: #f8f8f8;
     text-align: center;
     padding: 10px;
-    border-bottom: 2px solid #ddd;
   }
 
   tbody td {
     padding: 10px;
-    border-bottom: 1px solid #ddd;
   }
 
   tr:nth-child(even) {

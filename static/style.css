@@ -140,7 +140,7 @@ label {
     top: 0;          /* Umístí ji na vrch stránky */
     left: 0;         /* Zarovná k levé straně */
     width: 100%;     /* Zajistí, že pokryje celou šířku stránky */
-    background-color: #b7ccb0; /* Nastavení barvy pozadí */
+    background-color: #c7ecbb; /* Nastavení barvy pozadí */
     background-position: center;
     background-size: cover;
     color: black;    /* Barva textu */
@@ -166,7 +166,7 @@ label {
 .navbar a {
     text-decoration: none; /* Odstraní podtržení */
     color: black;          /* Barva textu */
-    background-color: #b7ccb0;
+    background-color: #c7ecbb;
     font-weight: bold;
 }
 
@@ -179,7 +179,7 @@ label {
     width: auto; /* Šířka boxu */
     padding: 50px; /* Vnitřní odsazení od okrajů */
     margin: 10px auto; /* Zarovnání na střed a mezera kolem boxu */
-    background-color: #b7ccb0; /* Světlé pozadí */
+    background-color: #c7ecbb; /* Světlé pozadí */
     border: 2px solid black; /* Šedý okraj */
     border-radius: 0px; /* Zaoblené rohy */
     text-align: center; /* Zarovnání textu na střed */
@@ -188,7 +188,7 @@ label {
 
 .box_title header {
     padding: 10px;
-    background-color: #b7ccb0;
+    background-color: #c7ecbb;
 }
 
 .box_title h2 {
@@ -330,14 +330,14 @@ main {
 .box_kontakty {
     display: grid;
     place-items: center;
-    background-color: #b7ccb0;
+    background-color: #c7ecbb;
     border: 2px solid black;
 }
 
 .div1_kontakty {
     width: 90%;
     height: auto;
-    background-color: #b7ccb0;
+    background-color: #c7ecbb;
     display: flex;
     justify-content: space-between;
 
@@ -355,7 +355,7 @@ main {
     text-decoration-color: #e5285c;
     text-decoration-style: solid;
     text-underline-offset: 10px;
-    background-color: #b7ccb0;
+    background-color: #c7ecbb;
 }
 
 .left_kontakty h1 {
@@ -363,7 +363,7 @@ main {
     text-decoration-color: #e5285c;
     text-decoration-style: solid;
     text-underline-offset: 10px;
-    background-color: #b7ccb0;
+    background-color: #c7ecbb;
 }
 
 .box_kontakty h2 {

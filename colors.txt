@@ -1,1 +1,4 @@
-#b7ccb0 - zelená k obrázku flowers.png
+#c7ecbb - zelená k obrázku flowers.png
+#f1678d - červená nahoře v navbar hover
+#e5285c - červená v podtržení textu h2
+#dabbec - fialová k designu 2
